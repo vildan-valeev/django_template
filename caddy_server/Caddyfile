@@ -1,0 +1,17 @@
+0.0.0.0:80 {
+    encode gzip
+
+    handle_path /static/* {
+        root * /var/www/html/static
+        file_server
+    }
+    handle {
+		reverse_proxy backend:8000
+	}
+
+	# Logs:
+    log {
+        # output stdout
+        format console
+    }
+}
