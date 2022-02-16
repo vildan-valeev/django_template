@@ -1,5 +1,5 @@
 # Settings backend
-Template for quick start project with Docker, Django, Dramatiq, Traefik(with Whitenoise), Gunicorn
+Template for quick start project with Docker, Django, Dramatiq, Caddy, Gunicorn
 
 
 
@@ -16,9 +16,6 @@ $ python manage.py rundramatiq
 ```sh
 $ docker-compose -f docker-compose.dev.yml up -d --build
 ```
-
-
-
 
 ## prod
 ```sh
