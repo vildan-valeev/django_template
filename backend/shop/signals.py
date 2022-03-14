@@ -14,5 +14,5 @@ def item_signal(sender, instance: Item, created, **kwargs):
     # your code here
     if created:
         print('Signal')
-        create_item_task.send(instance.id)
+        # create_item_task.send(instance.id)
     return True
